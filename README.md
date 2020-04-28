@@ -1,6 +1,6 @@
 # docker-wurmunlimited
 
-Docker container for Wurm Unlimited server
+Docker container for Wurm Unlimited server.
 
 ## Prerequisite
 
@@ -19,7 +19,6 @@ docker run -d --name wurm \
     -p 8766:8766/udp \
     -v </path/to/server/folder>:/opt/steam/wurm/server \
 nurtalf/wurmunlimited
-
 ```
 
 The container configures the server IPs automatically, but if you have any issues, you can manually specify them by using the following environmental variables when creating the container:
