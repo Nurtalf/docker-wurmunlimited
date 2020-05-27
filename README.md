@@ -42,3 +42,5 @@ Broadcast message:  `docker exec -it wurm /tools/rmi.sh broadcast "Hello everyon
 Shutdown server in 1 minute:  `docker exec -it wurm /tools/rmi.sh shutdown 60 "Quick server maintenance."`
 
 The server will not update on restart, as it might be necessary to do manual adjustments in the Wurm SQLite database when updating to a new version. Remember to always backup your server files, you'll never know when something could break.
+
+PS: You will need to add "USE_INCOMING_RMI=true" in wurm.ini in your server files to be able to use the RMI commands.

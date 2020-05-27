@@ -25,4 +25,5 @@ VOLUME /opt/steam/wurm/server
 EXPOSE 3724/tcp 8766 27016-27030/udp
 
 #HEALTHCHECK --interval=5m --timeout=5s --start-period=15s CMD /tools/rmi.sh isrunning || exit 1
+
 CMD ["/root/start.sh"]
